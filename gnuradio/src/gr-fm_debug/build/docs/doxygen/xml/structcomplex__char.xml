@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structcomplex__char" kind="struct" language="C++" prot="public">
+    <compoundname>complex_char</compoundname>
+    <includes refid="tuner_8h" local="no">tuner.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcomplex__char_1a0847710f045305ea27188382966db1bb" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char complex_char::real</definition>
+        <argsstring></argsstring>
+        <name>real</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" line="10" column="1" bodyfile="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcomplex__char_1a81dade78c444a05a928780de0a8836b4" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char complex_char::imag</definition>
+        <argsstring></argsstring>
+        <name>imag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" line="11" column="1" bodyfile="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" line="9" column="1" bodyfile="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" bodystart="9" bodyend="12"/>
+    <listofallmembers>
+      <member refid="structcomplex__char_1a81dade78c444a05a928780de0a8836b4" prot="public" virt="non-virtual"><scope>complex_char</scope><name>imag</name></member>
+      <member refid="structcomplex__char_1a0847710f045305ea27188382966db1bb" prot="public" virt="non-virtual"><scope>complex_char</scope><name>real</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

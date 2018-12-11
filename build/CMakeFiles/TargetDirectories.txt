@@ -1,0 +1,6 @@
+/home/jojo/cradio/build/CMakeFiles/rebuild_cache.dir
+/home/jojo/cradio/build/CMakeFiles/edit_cache.dir
+/home/jojo/cradio/build/CMakeFiles/demod.dir
+/home/jojo/cradio/build/CMakeFiles/tuner.dir
+/home/jojo/cradio/build/CMakeFiles/rtlSamps.dir
+/home/jojo/cradio/build/CMakeFiles/wstest.dir

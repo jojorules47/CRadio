@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/qa_fm_debug.cc
+qa_fm_debug.h
+/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/qa_fm_debug.h
+
+/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/qa_fm_debug.h
+gnuradio/attributes.h
+-
+cppunit/TestSuite.h
+-
+
+/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/test_fm_debug.cc
+config.h
+/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/config.h
+cppunit/TextTestRunner.h
+-
+cppunit/XmlOutputter.h
+-
+gnuradio/unittests.h
+-
+qa_fm_debug.h
+/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/qa_fm_debug.h
+iostream
+-
+fstream
+-
+

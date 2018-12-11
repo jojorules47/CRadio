@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="getSamps_8h" kind="file" language="C++">
+    <compoundname>getSamps.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includedby refid="shared__tuner__impl_8h" local="yes">shared_tuner_impl.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>getSamps.h</label>
+        <link refid="getSamps_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="8">
+        <label>shared_tuner_impl.h</label>
+        <link refid="shared__tuner__impl_8h"/>
+      </node>
+      <node id="7">
+        <label>getSamps.h</label>
+        <link refid="getSamps_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structshared__t" prot="public">shared_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="getSamps_8h_1a5244d2aa72b70d362eebb0eb0207f6b2" prot="public" static="no">
+        <name>MAX_DES</name>
+        <initializer>1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/getSamps.h" line="6" column="9" bodyfile="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/getSamps.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="getSamps_8h_1acad55a0d16a960cc649a99d872dac78b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long get_shared_memory_size</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>get_shared_memory_size</name>
+        <param>
+          <type>const char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/getSamps.h" line="15" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="getSamps_8h_1aa87a1ec7d5ecf67fc1250ac5f585909a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structshared__t" kindref="compound">shared_t</ref> *</type>
+        <definition>shared_t* init_shared_memory</definition>
+        <argsstring>(const char *, long)</argsstring>
+        <name>init_shared_memory</name>
+        <param>
+          <type>const char *</type>
+        </param>
+        <param>
+          <type>long</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/getSamps.h" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="getSamps_8h_1a6a13e3c33f7280f48d0b5e16d12e1519" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structshared__t" kindref="compound">shared_t</ref> *</type>
+        <definition>shared_t* map_shared_memory</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>map_shared_memory</name>
+        <param>
+          <type>const char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/getSamps.h" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="getSamps_8h_1a4164145f0fe51995b148375386407e1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int destroy_shared_memory</definition>
+        <argsstring>(shared_t *)</argsstring>
+        <name>destroy_shared_memory</name>
+        <param>
+          <type><ref refid="structshared__t" kindref="compound">shared_t</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/getSamps.h" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="getSamps_8h_1aba02316579d038ddc70bc34ae1083215" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int unmap_shared_memory</definition>
+        <argsstring>(shared_t *)</argsstring>
+        <name>unmap_shared_memory</name>
+        <param>
+          <type><ref refid="structshared__t" kindref="compound">shared_t</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/getSamps.h" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="getSamps_8h_1a9214676536de34dc0a09c869b7a0b3eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structshared__t" kindref="compound">shared_t</ref> *</type>
+        <definition>shared_t* read_shared_memory</definition>
+        <argsstring>(const char *, long)</argsstring>
+        <name>read_shared_memory</name>
+        <param>
+          <type>const char *</type>
+        </param>
+        <param>
+          <type>long</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/getSamps.h" line="21" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/getSamps.h"/>
+  </compounddef>
+</doxygen>

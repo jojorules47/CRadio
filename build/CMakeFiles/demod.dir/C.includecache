@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jojo/cradio/demod.c
+stdio.h
+-
+stdlib.h
+-
+stdint.h
+-
+string.h
+-
+signal.h
+-
+unistd.h
+-
+math.h
+-
+getSamps.h
+/home/jojo/cradio/getSamps.h
+tuner.h
+/home/jojo/cradio/tuner.h
+
+/home/jojo/cradio/getSamps.h
+stdio.h
+-
+
+/home/jojo/cradio/tuner.h
+stdint.h
+-
+

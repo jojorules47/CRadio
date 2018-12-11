@@ -1,0 +1,51 @@
+# Maintainer: Dan McCurry <dan.mccurry at linux dot com>
+# Contributor: Yunhui Fu <yhfudev@gmail.com>
+# Contributor: 0xfc <sfc_0@yahoo.com.cn>
+# Modified from gr-osmosdr-git PKGBUILD
+
+pkgname=gr-fm_debug
+pkgver=0
+pkgrel=1
+pkgdesc="GNU Radio test code."
+arch=('x86_64')
+url=""
+license=('GPL2')
+depends=(
+    'gnuradio'
+    'swig'
+    )
+makedepends=(
+    'git'
+    'cmake'
+    'boost'
+    )
+
+provides=('gr-fm_debug')
+conflicts=('gr-fm_debug')
+
+#source=('SKIP')
+#md5sums=('SKIP')
+
+pkgver() {
+  echo "0"
+}
+
+build() {
+  cd "$srcdir/gr-fm_debug"
+  mkdir -p build
+  cd build
+  cmake -DPYTHON_EXECUTABLE=$(which python2) \
+        -DPYTHON_INCLUDE_DIR=$(echo /usr/include/python2*) \
+        -DPYTHON_LIBRARY=$(echo /usr/lib/libpython2.*.so) \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        ..
+  make
+}
+
+package() {
+  cd "$srcdir/gr-fm_debug/build/"
+  make DESTDIR=${pkgdir} install
+  #install -Dm644 $srcdir/$_gitname/COPYING $pkgdir/usr/share/licenses/$pkgname/LICENSE
+}
+
+# vim:set ts=2 sw=2 et:

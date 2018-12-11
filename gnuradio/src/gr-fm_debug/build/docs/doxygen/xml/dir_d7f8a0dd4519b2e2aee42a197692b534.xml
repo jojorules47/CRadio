@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_d7f8a0dd4519b2e2aee42a197692b534" kind="dir">
+    <compoundname>fm_debug</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="shared__tuner_8h">shared_tuner.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jojo/cradio/gnuradio/src/gr-fm_debug/include/fm_debug/"/>
+  </compounddef>
+</doxygen>

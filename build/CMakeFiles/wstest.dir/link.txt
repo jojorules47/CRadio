@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/wstest.dir/websocket.c.o CMakeFiles/wstest.dir/getSamps.c.o CMakeFiles/wstest.dir/kiss_fft.c.o  -o wstest -lrt -lm -lnanomsg 

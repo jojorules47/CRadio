@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/sampread.dir/sampread.c.o CMakeFiles/sampread.dir/getSamps.c.o CMakeFiles/sampread.dir/kiss_fft.c.o  -o sampread -lrt -lm 

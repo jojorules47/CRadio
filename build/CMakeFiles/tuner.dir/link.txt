@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/tuner.dir/tuner.c.o CMakeFiles/tuner.dir/kiss_fft.c.o CMakeFiles/tuner.dir/getSamps.c.o  -o tuner -lrt -lm 

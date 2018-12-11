@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/rtlSamps.dir/rtlSamps.c.o CMakeFiles/rtlSamps.dir/getSamps.c.o  -o rtlSamps -lrt -lrtlsdr 

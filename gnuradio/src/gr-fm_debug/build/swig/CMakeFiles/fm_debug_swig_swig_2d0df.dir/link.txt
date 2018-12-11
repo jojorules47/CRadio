@@ -1,0 +1,1 @@
+/usr/bin/c++  -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-plt -O3 -DNDEBUG  -Wl,-O1,--sort-common,--as-needed,-z,relro,-z,now -rdynamic CMakeFiles/fm_debug_swig_swig_2d0df.dir/fm_debug_swig_swig_2d0df.cpp.o  -o fm_debug_swig_swig_2d0df 

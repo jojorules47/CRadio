@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structtuner__info__t" kind="struct" language="C++" prot="public">
+    <compoundname>tuner_info_t</compoundname>
+    <includes refid="tuner_8h" local="no">tuner.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtuner__info__t_1a1c0c5c567ece5fb622334fe3c02e82d8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t tuner_info_t::freq</definition>
+        <argsstring></argsstring>
+        <name>freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" line="20" column="1" bodyfile="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtuner__info__t_1a9a8b04dd1fe9010768b7c61f64bf47d0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t tuner_info_t::sample_rate</definition>
+        <argsstring></argsstring>
+        <name>sample_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" line="21" column="1" bodyfile="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtuner__info__t_1a0569d3df989e1c8842d318319081cb95" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tuner_info_t::gain</definition>
+        <argsstring></argsstring>
+        <name>gain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" line="22" column="1" bodyfile="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtuner__info__t_1abda63ce49c823808a515074a380b1a0c" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long tuner_info_t::sample_num</definition>
+        <argsstring></argsstring>
+        <name>sample_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" line="23" column="1" bodyfile="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtuner__info__t_1a0be5d6c88297f136fb90bf2c6b10cf66" prot="public" static="no" mutable="no">
+        <type><ref refid="structcomplex__char" kindref="compound">complex_char</ref></type>
+        <definition>complex_char tuner_info_t::buffer[SAMP_SIZE]</definition>
+        <argsstring>[SAMP_SIZE]</argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" line="24" column="1" bodyfile="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>complex_char</label>
+        <link refid="structcomplex__char"/>
+      </node>
+      <node id="10">
+        <label>tuner_info_t</label>
+        <link refid="structtuner__info__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>buffer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" line="19" column="1" bodyfile="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" bodystart="19" bodyend="25"/>
+    <listofallmembers>
+      <member refid="structtuner__info__t_1a0be5d6c88297f136fb90bf2c6b10cf66" prot="public" virt="non-virtual"><scope>tuner_info_t</scope><name>buffer</name></member>
+      <member refid="structtuner__info__t_1a1c0c5c567ece5fb622334fe3c02e82d8" prot="public" virt="non-virtual"><scope>tuner_info_t</scope><name>freq</name></member>
+      <member refid="structtuner__info__t_1a0569d3df989e1c8842d318319081cb95" prot="public" virt="non-virtual"><scope>tuner_info_t</scope><name>gain</name></member>
+      <member refid="structtuner__info__t_1abda63ce49c823808a515074a380b1a0c" prot="public" virt="non-virtual"><scope>tuner_info_t</scope><name>sample_num</name></member>
+      <member refid="structtuner__info__t_1a9a8b04dd1fe9010768b7c61f64bf47d0" prot="public" virt="non-virtual"><scope>tuner_info_t</scope><name>sample_rate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

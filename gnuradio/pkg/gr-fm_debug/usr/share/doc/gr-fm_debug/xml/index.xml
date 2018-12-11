@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.14">
+  <compound refid="structcomplex__char" kind="struct"><name>complex_char</name>
+    <member refid="structcomplex__char_1a0847710f045305ea27188382966db1bb" kind="variable"><name>real</name></member>
+    <member refid="structcomplex__char_1a81dade78c444a05a928780de0a8836b4" kind="variable"><name>imag</name></member>
+  </compound>
+  <compound refid="structcomplex__float" kind="struct"><name>complex_float</name>
+    <member refid="structcomplex__float_1a00ea53e1cbd6fa9bebbd478f205f42a9" kind="variable"><name>real</name></member>
+    <member refid="structcomplex__float_1af69487922eb8ba68a5dbbe15c00a5e22" kind="variable"><name>imag</name></member>
+  </compound>
+  <compound refid="structkiss__t" kind="struct"><name>kiss_t</name>
+    <member refid="structkiss__t_1ab515ce6f4acaef199d74e3f0b8e4559e" kind="variable"><name>sample_num</name></member>
+    <member refid="structkiss__t_1ab77069b23ca43c6698f061eb131e92c0" kind="variable"><name>buff</name></member>
+  </compound>
+  <compound refid="structshared__t" kind="struct"><name>shared_t</name>
+    <member refid="structshared__t_1a033c7a7c36e83aecf54684faa08746d1" kind="variable"><name>size</name></member>
+    <member refid="structshared__t_1aba95a307facac2141cbd3bf59780acf7" kind="variable"><name>designator</name></member>
+    <member refid="structshared__t_1a4f78daba244dd5c6adbb012f452c5d84" kind="variable"><name>md</name></member>
+    <member refid="structshared__t_1a6b6bd0893b61e4ab45f07e9b42a8a455" kind="variable"><name>memory</name></member>
+  </compound>
+  <compound refid="structtuner__info__t" kind="struct"><name>tuner_info_t</name>
+    <member refid="structtuner__info__t_1a1c0c5c567ece5fb622334fe3c02e82d8" kind="variable"><name>freq</name></member>
+    <member refid="structtuner__info__t_1a9a8b04dd1fe9010768b7c61f64bf47d0" kind="variable"><name>sample_rate</name></member>
+    <member refid="structtuner__info__t_1a0569d3df989e1c8842d318319081cb95" kind="variable"><name>gain</name></member>
+    <member refid="structtuner__info__t_1abda63ce49c823808a515074a380b1a0c" kind="variable"><name>sample_num</name></member>
+    <member refid="structtuner__info__t_1a0be5d6c88297f136fb90bf2c6b10cf66" kind="variable"><name>buffer</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a14748c441331ddb96339ebec7cd671b7" kind="define"><name>FM_DEBUG_API</name></member>
+  </compound>
+  <compound refid="getSamps_8h" kind="file"><name>getSamps.h</name>
+    <member refid="getSamps_8h_1a5244d2aa72b70d362eebb0eb0207f6b2" kind="define"><name>MAX_DES</name></member>
+    <member refid="getSamps_8h_1acad55a0d16a960cc649a99d872dac78b" kind="function"><name>get_shared_memory_size</name></member>
+    <member refid="getSamps_8h_1aa87a1ec7d5ecf67fc1250ac5f585909a" kind="function"><name>init_shared_memory</name></member>
+    <member refid="getSamps_8h_1a6a13e3c33f7280f48d0b5e16d12e1519" kind="function"><name>map_shared_memory</name></member>
+    <member refid="getSamps_8h_1a4164145f0fe51995b148375386407e1c" kind="function"><name>destroy_shared_memory</name></member>
+    <member refid="getSamps_8h_1aba02316579d038ddc70bc34ae1083215" kind="function"><name>unmap_shared_memory</name></member>
+    <member refid="getSamps_8h_1a9214676536de34dc0a09c869b7a0b3eb" kind="function"><name>read_shared_memory</name></member>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="shared__tuner_8h" kind="file"><name>shared_tuner.h</name>
+  </compound>
+  <compound refid="shared__tuner__impl_8h" kind="file"><name>shared_tuner_impl.h</name>
+  </compound>
+  <compound refid="tuner_8h" kind="file"><name>tuner.h</name>
+    <member refid="tuner_8h_1ac0a433e4a08e52a0296b1df09b2cd1b5" kind="define"><name>SAMP_SIZE</name></member>
+    <member refid="tuner_8h_1a16c23eddd32474623e941c050ed37325" kind="define"><name>TUNE_MEM_SIZE</name></member>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_d7f8a0dd4519b2e2aee42a197692b534" kind="dir"><name>fm_debug</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

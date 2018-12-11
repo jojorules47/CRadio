@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/getSamps.c
+stdio.h
+-
+stdlib.h
+-
+fcntl.h
+-
+unistd.h
+-
+string.h
+-
+sys/stat.h
+-
+sys/mman.h
+-
+sys/shm.h
+-
+getSamps.h
+/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/getSamps.h
+
+/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/getSamps.h
+stdio.h
+-
+

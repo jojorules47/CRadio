@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structkiss__t" kind="struct" language="C++" prot="public">
+    <compoundname>kiss_t</compoundname>
+    <includes refid="tuner_8h" local="no">tuner.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structkiss__t_1ab515ce6f4acaef199d74e3f0b8e4559e" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long kiss_t::sample_num</definition>
+        <argsstring></argsstring>
+        <name>sample_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" line="28" column="1" bodyfile="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structkiss__t_1ab77069b23ca43c6698f061eb131e92c0" prot="public" static="no" mutable="no">
+        <type><ref refid="structcomplex__float" kindref="compound">complex_float</ref></type>
+        <definition>complex_float kiss_t::buff[TUNE_MEM_SIZE]</definition>
+        <argsstring>[TUNE_MEM_SIZE]</argsstring>
+        <name>buff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" line="29" column="1" bodyfile="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>kiss_t</label>
+        <link refid="structkiss__t"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>buff</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>complex_float</label>
+        <link refid="structcomplex__float"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" line="27" column="1" bodyfile="/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h" bodystart="27" bodyend="30"/>
+    <listofallmembers>
+      <member refid="structkiss__t_1ab77069b23ca43c6698f061eb131e92c0" prot="public" virt="non-virtual"><scope>kiss_t</scope><name>buff</name></member>
+      <member refid="structkiss__t_1ab515ce6f4acaef199d74e3f0b8e4559e" prot="public" virt="non-virtual"><scope>kiss_t</scope><name>sample_num</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/fm_debug/api.h
+gnuradio/attributes.h
+-
+
+../include/fm_debug/shared_tuner.h
+fm_debug/api.h
+-
+gnuradio/sync_block.h
+-
+
+/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/getSamps.h
+stdio.h
+-
+
+/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/shared_tuner_impl.cc
+config.h
+/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/config.h
+string
+-
+gnuradio/io_signature.h
+-
+shared_tuner_impl.h
+/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/shared_tuner_impl.h
+
+/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/shared_tuner_impl.h
+fm_debug/shared_tuner.h
+-
+getSamps.h
+/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/getSamps.h
+tuner.h
+/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h
+
+/home/jojo/cradio/gnuradio/src/gr-fm_debug/lib/tuner.h
+stdint.h
+-
+

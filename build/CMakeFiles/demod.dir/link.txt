@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/demod.dir/demod.c.o CMakeFiles/demod.dir/getSamps.c.o  -o demod -lrt -lm 

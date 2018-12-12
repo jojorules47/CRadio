@@ -47,7 +47,7 @@ int main() {
 	int cnt, buf_number;
 	const char* shm_name = "mem";
 	const char* tune_name = "tuner";
-	int ifft_N = 2048; // bin size to ~64k, or radio location as power of 2
+	int ifft_N = 1024; // bin size to ~64k, or radio location as power of 2
 	//int filt_size = 32768;
 	//int taps = 109;
 	uint32_t shm_size;
@@ -118,9 +118,9 @@ int main() {
 			printf("Falling behind\n");
 		}
 		int bpos = now % SAMP_SIZE;
-		if(!bpos){
+		/*if(!bpos){
 			printf("Still running %ld %ld\n",diff,now);
-		}
+		}*/
 		
 		for (cnt = 0; cnt < N2; cnt++) {
 			cx_in[cnt+N2].r = (float) (memory[bpos+cnt].real-127.5f);

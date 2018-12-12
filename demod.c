@@ -34,9 +34,9 @@ int main() {
 	kiss_t* tuner_s = (kiss_t*)tune_memory->memory;
 	complex_float* tune_out = tuner_s->buff;
 
-	FILE *afile = fopen("afile.dat","wb");
+	//FILE *afile = fopen("afile.dat","wb");
 
-	block_size = (TUNE_MEM_SIZE) / 16;
+	block_size = (TUNE_MEM_SIZE) / 32;
 	long now = tuner_s->sample_num;
 	long offset = now/block_size;
 	now = offset*block_size;
@@ -60,24 +60,24 @@ int main() {
 				break;
 			}
 		}
-		printf("On sample %ld\n", samp_num);
+		//printf("On sample %ld\n", samp_num);
 		long diff = samp_num - next;
-		if(diff>256000){
-			printf("Falling behind\n");
-		}
+		//if(diff>256000){
+		//	printf("Falling behind\n");
+		//}
 		int start_offset = now % (TUNE_MEM_SIZE);
 		for(cnt=0;cnt<block_size;cnt++){
 			int idx = cnt + start_offset;
 			complex_float data_cpx;
-		       data_cpx.real = tune_out[idx].real * last.real - tune_out[idx].imag * last.imag;
+		        data_cpx.real = tune_out[idx].real * last.real - tune_out[idx].imag * last.imag;
 			data_cpx.imag = tune_out[idx].real * last.imag + tune_out[idx].imag * last.real;
 			data[cnt] = atan2(data_cpx.imag,data_cpx.real);
 			last.real = tune_out[idx].real;
-			last.imag = tune_out[idx].imag;
+			last.imag = -tune_out[idx].imag;
 		}
 
-		fwrite(data, sizeof(float), block_size, afile);
-		fflush(afile);
+		fwrite(data, sizeof(float), block_size, stdout);
+		//fflush(stdout);
 
 		now += block_size;
 		next = now + block_size;
@@ -85,6 +85,6 @@ int main() {
 	//free(datar);
 	//free(datai);
 	free(data);
-	fclose(afile);
+	//fclose(afile);
 	return 0;
 }

@@ -9,8 +9,7 @@
 #include "getSamps.h"
 #include "tuner.h"
 #include "kiss_fft.h"
-
-#define FILTER_TAP_NUM 33
+#include "filter_taps.h"
 
 static int do_exit = 0;
 
@@ -46,41 +45,6 @@ int main() {
 	long next = now + block_size;
 	samp_num = now;
 	buf_number = 0;
-
-	static double filter_taps[FILTER_TAP_NUM] = {-0.016253292838097254,
-		-0.05743840964970983,
-		-0.05596439344342629,
-		0.0001530388985161355,
-		0.03393232492900409,
-		-0.006171498578367088,
-		-0.03114962670706923,
-		0.015513336012730857,
-		0.03248162595456588,
-		-0.02916823667891449,
-		-0.034591216714420045,
-		0.05143456613294535,
-		0.03651811191114433,
-		-0.09849574481007074,
-		-0.03776111670143315,
-		0.315807809989598,
-		0.5383404961323581,
-		0.315807809989598,
-		-0.03776111670143315,
-		-0.09849574481007074,
-		0.03651811191114433,
-		0.05143456613294535,
-		-0.034591216714420045,
-		-0.02916823667891449,
-		0.03248162595456588,
-		0.015513336012730857,
-		-0.03114962670706923,
-		-0.006171498578367088,
-		0.03393232492900409,
-		0.0001530388985161355,
-		-0.05596439344342629,
-		-0.05743840964970983,
-		-0.016253292838097254};
-
 	// this is for N/D decimation
 	int N = 2*block_size;
 	int D = 2*block_size;
@@ -96,7 +60,7 @@ int main() {
 	icfg = kiss_fft_alloc(D,1,NULL,NULL);
 
 	signal(SIGINT,sig_handler);
-	float* data_out = calloc(D/2,sizeof(float));
+	float* data_out = calloc(N/4,sizeof(float));
 	float* data = calloc(N,sizeof(float));
 
 	complex_float last;
@@ -117,26 +81,30 @@ int main() {
 		//	printf("Falling behind\n");
 		//}
 		int start_offset = now % (TUNE_MEM_SIZE);
-		memcpy(cx_in, &cx_in[N/2], N/2*sizeof(kiss_fft_cpx));
+		//memcpy(cx_in, &cx_in[N/2], N/2*sizeof(kiss_fft_cpx));
+		memcpy(data, &data[N/2], N/2*sizeof(float));
 		for(cnt=0;cnt<N/2;cnt++){
 			int idx = cnt + start_offset;
 			complex_float data_cpx;
 		        data_cpx.real = tune_out[idx].real * last.real - tune_out[idx].imag * last.imag;
 			data_cpx.imag = tune_out[idx].real * last.imag + tune_out[idx].imag * last.real;
-			cx_in[cnt + N/2].r = atan2(data_cpx.imag,data_cpx.real);
-			cx_in[cnt + N/2].i = 0;
-			//data[cnt] = atan2(data_cpx.imag,data_cpx.real);
+			//cx_in[cnt + N/2].r = atan2(data_cpx.imag,data_cpx.real);
+			//cx_in[cnt + N/2].i = 0;
+			data[cnt + N/2] = atan2(data_cpx.imag,data_cpx.real);
 			last.real = tune_out[idx].real;
 			last.imag = -tune_out[idx].imag;
 		}
 		
-		/*for(cnt=0;cnt<N/2;cnt++){
-			for(a=0;a<FILTER_TAP_NUM;a++){
-				data_out[cnt] += filter_taps[FILTER_TAP_NUM - 1 - a] * data[cnt + a];
-			}
-		}*/
+		for(cnt=0;cnt<N/2;cnt+=2){
+			        data_out[cnt/2] = filter_taps[0] * data[cnt];
+				for(a=1;a<FILTER_TAP_NUM;a++){
+					data_out[cnt/2] += filter_taps[a] * data[cnt + a];
+				}
+				data_out[cnt/2] = data_out[cnt/2]/2.0f;
+			//data_out[cnt/2] = data[cnt];
+		} //Add decimation of 4
 
-		kiss_fft(cfg,cx_in,cx_out);
+		/*kiss_fft(cfg,cx_in,cx_out);
 		memcpy(icx_in, cx_out, N*sizeof(kiss_fft_cpx));
 		//memcpy(&icx_in[10], &cx_out[10], (D/2-10) * sizeof(kiss_fft_cpx));
 		//memcpy(&icx_in[D/2-10], &cx_out[N-D/2-1-10], (D/2-10) * sizeof(kiss_fft_cpx));
@@ -146,9 +114,9 @@ int main() {
 		for(cnt=0;cnt<D/2;cnt++){
 			data_out[cnt] = icx_out[cnt+D/4].r/(float)(D/2);
 			//if(!cnt) printf("Val is %f\n", data_out[cnt]);
-		}
+		} */
 
-		fwrite(data_out, sizeof(float), D/2, stdout);
+		fwrite(data_out, sizeof(float), N/4, stdout);
 		//fflush(stdout);
 
 		now += block_size;

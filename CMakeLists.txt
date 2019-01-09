@@ -12,5 +12,5 @@ target_link_libraries(wstest -lrt -lm -lnanomsg)
 add_executable(tuner tuner.c kiss_fft.c getSamps.c)
 target_link_libraries(tuner -lrt -lm)
 
-add_executable(demod demod.c  getSamps.c)
+add_executable(demod demod.c kiss_fft.c getSamps.c)
 target_link_libraries(demod -lrt -lm)
